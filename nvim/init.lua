@@ -1,0 +1,8 @@
+require("som38.core")
+require("som38.dev")
+require("som38.lazy")
+require("som38.after")
+require("som38.plugins.custom.md_render")
+require("som38.plugins.custom.theme_toggler")
+require("som38.plugins.custom.arc_navigate.init")
+vim.cmd("DarkColors")

@@ -1,0 +1,8 @@
+local autocmds = require("som38.core.autocmds")
+local keymaps = require("som38.core.keymaps")
+local options = require("som38.core.options")
+local commands = require("som38.core.commands")
+autocmds.setup()
+keymaps.setup()
+options.setup()
+commands.setup()
