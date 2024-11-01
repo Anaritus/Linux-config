@@ -6,7 +6,6 @@ return {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
-		{ dir = "~/arcadia/junk/moonw1nd/lua/telescope-arc.nvim" },
 	},
 	config = function()
 		local telescope = require("telescope")

@@ -58,11 +58,6 @@ M.setup = function()
 			vim.highlight.on_yank({ higroup = "Visual", timeout = 100 })
 		end,
 	})
-
-	vim.api.nvim_create_autocmd("InsertLeave", {
-		pattern = "*",
-		command = "silent !macism com.apple.keylayout.US && sketchybar --trigger input_change",
-	})
 end
 
 return M

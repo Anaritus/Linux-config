@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 return require("lazy").setup({
 	{ import = "som38.plugins" },
 	{ import = "som38.plugins.lsp" },
-	{ import = "som38.plugins.work" },
+	-- { import = "som38.plugins.work" },
 }, {
 	install = {
 		colorscheme = { "catppuccin" },
@@ -24,6 +24,6 @@ return require("lazy").setup({
 		border = "rounded",
 	},
 	dev = {
-		path = "~/.config/nvim/plugin",
+		path = "~/.config/nvim/lua/custom",
 	},
 })
