@@ -58,6 +58,11 @@ M.setup = function()
 			vim.highlight.on_yank({ higroup = "Visual", timeout = 100 })
 		end,
 	})
+
+	vim.api.nvim_create_autocmd("InsertLeave", {
+		pattern = "*",
+		command = "silent !hyprctl keyword input:kb_layout us,ru",
+	})
 end
 
 return M

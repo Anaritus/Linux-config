@@ -40,14 +40,8 @@ return {
 		local keymap = vim.keymap -- for conciseness
 		keymap.set("n", "<leader>ff", builtin.find_files) -- find files within current working directory, respects .gitignore
 		keymap.set("n", "<leader>fg", "<cmd>Telescope find_files no_ignore=true<cr>") -- find files within current working directory, respects .gitignore
-		keymap.set("n", "<leader>fs", function()
-			builtin.live_grep()
-		end) -- find string in current working directory as you type
-		keymap.set("n", "<leader>fb", function()
-			builtin.buffers()
-		end) -- list open buffers in current neovim instance
-		keymap.set("n", "<leader>fh", function()
-			builtin.help_tags()
-		end) -- list available help tags
+		keymap.set("n", "<leader>fs", builtin.live_grep) -- find string in current working directory as you type
+		keymap.set("n", "<leader>fb", builtin.buffers) -- list open buffers in current neovim instance
+		keymap.set("n", "<leader>fh", builtin.help_tags) -- list available help tags
 	end,
 } -- fuzzy finder
